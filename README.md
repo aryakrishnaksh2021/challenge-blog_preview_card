@@ -21,7 +21,7 @@ This is a solution to the [Blog preview card challenge on Frontend Mentor](https
 
 ### Links
 - Solution URL: [https://github.com/aryakrishnaksh2021/challenge-blog_preview_card](https://github.com/aryakrishnaksh2021/challenge-blog_preview_card)
-- Live Site URL: [https://6638fa29783c73f641f72896--earnest-panda-410d44.netlify.app/](https://6638fa29783c73f641f72896--earnest-panda-410d44.netlify.app/)
+- Live Site URL: [https://6638fc62773430fb8607e42a--sweet-starlight-47e4f5.netlify.app/](https://6638fc62773430fb8607e42a--sweet-starlight-47e4f5.netlify.app/)
 
 ## My process
 I started with bulding the layout of the design using HTML elements, then adding style class to each element. After that, I added the media query for the responsive design.Finally done the lighthouse audit for the performance and accessibility. Then made changes according with the best practices.
