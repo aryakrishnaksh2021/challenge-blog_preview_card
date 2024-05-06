@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <meta name="description" content="Solution to the Frontend Mentor challenge : Blog preview card">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @font-face {
+      font-family: Figtree;
+      src: url('./assets/fonts/Figtree-VariableFont_wght.ttf');
+      font-display: swap;
+    }
+
+    :root {
+      --yellow: hsl(47, 88%, 63%);
+      --grey: hsl(0, 0%, 50%);
+      --black: hsl(0, 0%, 7%);
+    }
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    .bg {
+      font-family: Figtree;
+      background: var(--yellow);
+      padding: 0;
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      font-size: 16px;
+    }
+
+    .container {
+      flex-grow: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .card {
+      background: white;
+      padding: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 14px;
+      border-radius: 1rem;
+      max-width: 350px;
+      border: 1px solid var(--black);
+      box-shadow: 8px 8px 0px var(--black);
+      transition: all .2s ease-in-out;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 15px 15px 0px var(--black);
+    }
+
+    .card:hover .heading {
+      color: var(--yellow);
+
+    }
+
+    .card button {
+      background: var(--yellow);
+      border: none;
+      font-weight: 800;
+      padding: .35rem .65rem;
+      border-radius: .3rem;
+      color: var(--black);
+      margin-top:.5rem;
+      font-size: 14px;
+    }
+
+    .label {
+      font-size: 14px;
+      font-weight: 500;
+      margin: 0;
+      color: var(--black)
+    }
+
+    .heading {
+      margin: 0;
+      color: var(--black);
+      transition: all .2s ease-in-out;
+      font-weight: 800;
+    }
+
+    .body {
+      font-size: 16px;
+      margin: 0;
+      color: var(--grey);
+      line-height: 1.2rem;
+      font-weight: 500;
+    }
+
+
+    .image-bg {
+      background-image: url("./assets/images/illustration-article.svg");
+      height: 200px;
+      width: 100%;
+      border-radius: .5rem;
+      background-size: cover;
+
+    }
+
+    @media screen and (max-width: 480px) and (min-width:371px) {
+      .card {
+        width: 280px;
+        padding: 1rem;
+      }
+
+      .image-bg {
+        height: 200px;
+        background-position: bottom;
+      }
+
+    }
+
+    @media screen and (max-width: 370px) {
+      .card {
+        width: 220px;
+      }
+
+    }
+  </style>
+</head>
+
+<body class="bg">
+  <div class="container">
+    <div class="card">
+      <!-- <img src="./assets/images/illustration-article.svg" alt="article illustration" /> -->
+      <div class="image-bg"></div>
+     
+      <button>Learning</button>
+      <p class="label">Published 21 Dec 2023 </p>
+
+      <h3 class="heading">HTML & CSS foundations </h3>
+      <p class="body">These languages are the backbone of every website, defining structure, content, and presentation.
+      </p>
+
+
+      <div style="display: flex; gap:14px; align-items: center;">
+        <img src="./assets/images/image-avatar.webp" alt="avatar" width="40px" height="40px" />
+        <p style="font-weight: 800;color: var(--black);font-size: 15px;">Greg Hooper </p>
+
+      </div>
+    </div>
+
+
+
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Aryakrishna VR</a>.
+  </div>
+</body>
+
+</html>
